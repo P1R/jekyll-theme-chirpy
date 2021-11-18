@@ -1,9 +1,9 @@
 ---
-title: Maxcoin Website Organization
+title: Maxcoin Website Organization Proposal
 author: p1r0
 date: 2021-11-16 20:41:00 +0800
 categories: [Developers, Website]
-tags: [website, structure]
+tags: [website, proposal]
 render_with_liquid: false
 ---
 Some perspectives and philosophies to follow: 
@@ -79,48 +79,6 @@ A simple structure to fit everything for everyone
 > * Explorers
 > * Media
 
-## Based on the user types and labels I propose two types of browsing for documentation which are the following:
-* Landing 
-    * get back  here by clicking the logo? or a small go back button
-    * Roadmap
-    * Features
-    * Media
-* Developers ()
-    * Includes Roadman Projects
-    * Projects
-    * Documentation for Devs
-    * WebPage
-* Community & Users 
-    * Community Documentation
-    * Miners Documentation
-    * includes Governance / DAO
-    * Includes Roadman Projects
-* Documentation
-    * Users and Community
-        * User Documenation
-        * Community Documentation
-        * Includes community
-        * Includes Roadman Projects
-    * Developers
-        * Git projects
-        * Current Projects
-        * Dev Roadmap
-    * Miners
-        * Miners Documentation
-    * Governance 
-        * Governance documentation
-        * DAO
-        * Testnet
-    * Drafts (help us research)
-        * HackMD research links
-    * Links all types of documentation
-* Use Maxcoin
-    * User Documentation
-    * Wallets
-    * Explorers
-    * Exchanges
-    * Mine Maxcoin
-
 # Documentation based on UserTypes and Labels
 
 > based on the user types and labels I propose two types of browsing for documentation which are the following:
@@ -131,7 +89,81 @@ A simple structure to fit everything for everyone
 2. **By Labels**
    We create labels per article so that we have a better way to access or manage acording to the amount of article types and specific research areas.
 
+# Maxcoin Website Index (ToDo)
+> Based on the user types, and documentation we propose the following index:
 
+- [ ] Landing (about layout) Static
+    - [ ] get back  here by clicking the logo? or a small go back button
+    - [x] what is maxcoin
+    - [x] Maxcoin Fundamentals
+    - [x] Features (summary md)
+    - [ ] Roadmap (based on archives Layout)
+    - [ ] Media
+        - [ ] Articles
+        - [ ] Postcast
+        - [ ] Videos
+- [ ] Use Maxcoin (about layout) Static [users]
+    - [ ] Downloads
+    - [ ] Wallets
+        - [ ] Maxcoin Core
+        - [ ] VirtualBox
+        - [ ] Electrum
+    - [ ] Explorers
+    - [ ] Exchanges
+        - [ ] self hosted
+        - [ ] third parties
+    - [ ] User Documentation
+- [ ] Mine Maxcoin (about layout) (should we put it as main menu?)
+    - [ ] Organization
+    - [ ] Pools
+    - [ ] Software
+    - [ ] Hardware
+    - [ ] Miners Documentation
+- [ ] Developers (Categories layout)
+    - [ ] Includes Roadman Projects
+    - [ ] Projects
+    - [x] WebPage
+    - [x] Maxcoin Features
+    - [ ] Organization
+    - [ ] Resources index (git, testnet explorer, etc.)
+    - [ ] Development tools (Projects, Wallets, Dapps, MIP)
+    - [ ] Best Practices
+    - [ ] Dev Rules
+- [ ] Community
+    - [ ] Community Documentation
+    - [ ] includes Governance / DAO
+        - [ ] Documentation (Governance, Support, etc...)
+        - [ ] Trust or proof of beeing active
+    - [ ] Includes Roadman Projects
+    - [ ] FAQ
+    - [ ] Manifesto and Philosophy
+- [ ] Documentation
+    - [ ] Community
+        - [ ] FAQ
+        - [ ] User Documenation
+        - [ ] Community Documentation
+        - [ ] Includes community
+        - [ ] Includes Roadman Projects
+    - [ ] Developers
+        - [ ] Git projects
+        - [ ] Features
+        - [ ] Current Projects
+        - [ ] Dev Roadmap
+        - [ ] MRCs (Maxcoin Request for Comments)
+    - [ ] Miners
+        - [ ] Pools
+        - [ ] Software
+        - [ ] Hardware
+        - [ ] Miners Documentation
+    - [ ] Governance 
+        - [ ] Governance documentation
+        - [ ] DAO
+        - [ ] Testnet
+    - [ ] Drafts (help us research)
+        - [ ] HackMD research links
+        - [ ] MIPs (Maxcoin Improvement Proposals)
+            - [ ] [MIP02](https://hackmd.io/eHlVUFbITfa-Qt_khyrQjw)
+    - [ ] Links all types of documentation
 
 # Website features
 
