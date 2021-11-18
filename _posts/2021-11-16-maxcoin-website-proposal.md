@@ -103,15 +103,15 @@ A simple structure to fit everything for everyone
         - [ ] Postcast
         - [ ] Videos
 - [ ] Use Maxcoin (about layout) Static [users]
-    - [ ] Downloads
-    - [ ] Wallets
-        - [ ] Maxcoin Core
-        - [ ] VirtualBox
+    - [x] Downloads
+    - [x] Wallets
+        - [x] Maxcoin Core
+        - [x] VirtualBox
         - [ ] Electrum
-    - [ ] Explorers
-    - [ ] Exchanges
-        - [ ] self hosted
-        - [ ] third parties
+    - [x] Explorers
+    - [x] Exchanges
+        - [x] self hosted
+        - [x] third parties
     - [ ] User Documentation
 - [ ] Mine Maxcoin (about layout) (should we put it as main menu?)
     - [ ] Organization
@@ -164,6 +164,8 @@ A simple structure to fit everything for everyone
         - [ ] MIPs (Maxcoin Improvement Proposals)
             - [ ] [MIP02](https://hackmd.io/eHlVUFbITfa-Qt_khyrQjw)
     - [ ] Links all types of documentation
+- [ ] Decentralized Gateways
+
 
 # Website features
 
