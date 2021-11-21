@@ -102,7 +102,7 @@ A simple structure to fit everything for everyone
         - [ ] Articles
         - [ ] Postcast
         - [ ] Videos
-- [ ] Use Maxcoin (about layout) Static [users]
+- [x] Use Maxcoin (about layout) Static [users]
     - [x] Downloads
     - [x] Wallets
         - [x] Maxcoin Core
@@ -113,12 +113,6 @@ A simple structure to fit everything for everyone
         - [x] self hosted
         - [x] third parties
     - [ ] User Documentation
-- [ ] Mine Maxcoin (about layout) (should we put it as main menu?)
-    - [ ] Organization
-    - [ ] Pools
-    - [ ] Software
-    - [ ] Hardware
-    - [ ] Miners Documentation
 - [ ] Developers (Categories layout)
     - [ ] Includes Roadman Projects
     - [ ] Projects
@@ -129,15 +123,21 @@ A simple structure to fit everything for everyone
     - [ ] Development tools (Projects, Wallets, Dapps, MIP)
     - [ ] Best Practices
     - [ ] Dev Rules
-- [ ] Community
+- [x] Community (about layout) Static [users]
     - [ ] Community Documentation
     - [ ] includes Governance / DAO
         - [ ] Documentation (Governance, Support, etc...)
-        - [ ] Trust or proof of beeing active
+        - [ ] Activity Levels
     - [ ] Includes Roadman Projects
     - [ ] FAQ
     - [ ] Manifesto and Philosophy
-- [ ] Documentation
+- [x] Mine Maxcoin (about layout)
+    - [x] Organization
+    - [x] Pools
+    - [x] Software
+    - [x] Hardware
+    - [x] Miners Documentation
+- [ ] Documentation (Categories layout)
     - [ ] Community
         - [ ] FAQ
         - [ ] User Documenation
