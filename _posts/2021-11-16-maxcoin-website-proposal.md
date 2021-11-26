@@ -159,8 +159,9 @@ A simple structure to fit everything for everyone
         - [ ] Governance documentation
         - [ ] DAO
         - [ ] Testnet
-    - [ ] Drafts (help us research)
-        - [ ] HackMD research links
+    - [ ] Research
+        - [x] Resources
+        - [ ] Papers (Articles)
         - [ ] MIPs (Maxcoin Improvement Proposals)
             - [ ] [MIP02](https://hackmd.io/eHlVUFbITfa-Qt_khyrQjw)
     - [ ] Links all types of documentation

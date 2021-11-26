@@ -34,7 +34,7 @@ This is a HOW TO build and run “The Maxcoin Core Wallet” with VirtualBox
   > Maxcoin’s enhacements are being done using VirtualBox for testing and developing the wallet.
   > Please follow this manual to keep up with maxcoin standards.
 
-  * [**How to build Maxcoin with Virtual Box**](https://github.com/Max-Coin/virtualbox-dev-environment)
+  * [**How to build Maxcoin with Virtual Box**]({% post_url 2021-11-21-maxcoin-wallet-virtualbox %})
  
 ### Maxcoin Exchanges
 ---
