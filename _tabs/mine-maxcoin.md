@@ -1,7 +1,7 @@
 ---
 title: Mine Maxcoin
 icon: fas fa-info-circle
-order: 8
+order: 4
 ---
 
 ## Pools:

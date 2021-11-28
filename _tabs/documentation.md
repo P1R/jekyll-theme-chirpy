@@ -2,5 +2,5 @@
 layout: categories
 title: Documentation
 icon: fas fa-stream
-order: 9
+order: 5
 ---

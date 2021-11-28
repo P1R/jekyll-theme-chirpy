@@ -1,7 +1,7 @@
 ---
 title: Use Maxcoin
 icon: fas fa-info-circle
-order: 5
+order: 1
 ---
 
 ## Downloads

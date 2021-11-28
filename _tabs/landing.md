@@ -1,7 +1,7 @@
 ---
-title: what is Maxcoin?
+title: What is Maxcoin?
 icon: fas fa-home ml-xl-3 mr-xl-3 unloaded
-order: 5
+order: 0
 ---
 
 **Maxcoin is your coin, it’s in your hands, the early adopters, miners, developers and enthusiasts. Maxcoin is here for all.**

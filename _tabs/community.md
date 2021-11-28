@@ -1,7 +1,7 @@
 ---
 title: Community
 icon: fas fa-info-circle
-order: 7
+order: 3
 ---
 
 ## FAQ
