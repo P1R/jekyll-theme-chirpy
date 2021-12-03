@@ -6,7 +6,8 @@ order: 1
 
 ## Downloads
 
-### Wallets ---
+### Wallets 
+---
 Maxcoin Core Contributors are welcome to work on an iOS and Android wallet, but we are also interested in working closely with 3rd Party Wallets where your wallets will be introduced to our growing Maxcoin community.
 
 > Special Note Regarding Wallet Sync Time:
@@ -16,7 +17,7 @@ Maxcoin Core Contributors are welcome to work on an iOS and Android wallet, but 
 >  We encourage the community to sync, seed and share the following p2p solutions.
 
 
-#### Maxcoin Wallets:
+***Maxcoin Wallets:***
 
   * [Lastest Release](https://github.com/Max-Coin/maxcoin/releases/download/v0.9.4.2/)
   * [Windows](https://github.com/Max-Coin/maxcoin/releases/download/v0.9.4.2/maxcoin-installer.exe)
@@ -27,20 +28,12 @@ Maxcoin Core Contributors are welcome to work on an iOS and Android wallet, but 
   * [IPFS Paper Wallet (Coming Soon)]()
 
 Source Code:| [zip](https://github.com/Max-Coin/maxcoin/archive/refs/tags/v0.9.4.2.zip) | [tar.gz](https://github.com/Max-Coin/maxcoin/archive/refs/tags/v0.9.4.2.tar.gz)|
-
-#### VirtualBox Image
-This is a HOW TO build and run “The Maxcoin Core Wallet” with VirtualBox
-
-  > Maxcoin’s enhacements are being done using VirtualBox for testing and developing the wallet.
-  > Please follow this manual to keep up with maxcoin standards.
-
-  * [**How to build Maxcoin with Virtual Box**]({% post_url 2021-11-21-maxcoin-wallet-virtualbox %})
  
-### Maxcoin Exchanges
+## Maxcoin Exchanges
 ---
 As a community, we believe that when a cryptocurrency is allowed to grow organically thru effective management, planning and development rather than via marketers & financial means, it can stay true to it’s decentralised principles and values. Therefore, Maxcoin does not pay for listings on exchanges and all the following listings are provided for free
 
-#### List of Exchanges:
+### List of Exchanges:
 ---
 
   * [FreiExchange](https://freiexchange.com/market/MAX/BTC)
@@ -51,17 +44,17 @@ As a community, we believe that when a cryptocurrency is allowed to grow organic
 
 > **Note:** Yobit Deposits and Withdrawals are currently Disabled
 
-### Maxcoin Block Explorers
+## Maxcoin Block Explorers
 ---
 
-#### Self-Hosted Explorers:
+### Self-Hosted Explorers:
   * [Maxcoin explorer](https://explorer.maxcoinproject.net/) 
   * [Maxcoin explorer 2](https://explorer2.maxcoinproject.net/) 
 
-#### Third Party Explorers:
+### Third Party Explorers:
   * [Open Chains](https://openchains.info/coin/maxcoin/blocks)
 
-### User Documentation
+## User Documentation
 ---
 
 **ToDo**

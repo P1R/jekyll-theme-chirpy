@@ -1,5 +1,5 @@
 ---
-title: Mine Maxcoin
+title: Miners
 icon: fas fa-info-circle
 order: 4
 ---

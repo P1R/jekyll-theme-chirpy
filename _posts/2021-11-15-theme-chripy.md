@@ -2,7 +2,7 @@
 title: Text and Typography
 author: Cotes Chung
 date: 2021-11-16 20:41:00 +0800
-categories: [Developers, Jekyll]
+categories: [Developers, Website]
 tags: [website, jekyll, theme]
 math: true
 mermaid: true
