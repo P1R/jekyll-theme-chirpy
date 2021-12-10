@@ -4,8 +4,27 @@ layout: page
 ---
 
 {% include lang.html %}
+<div class="post-content">
 
-<p><strong>TBA</strong></p>
+        <h2 id="sha-3keccak-schnorr-kimoto-gravity-well">SHA-3/Keccak, Schnorr, Kimoto Gravity Well.</h2>
+<hr>
+<p><strong>An Old School, No Pre-mine coin with Integrity with next level Features.</strong></p>
+
+<h4 id="coin-features">Coin Features:</h4>
+<ul>
+  <li>Algorithm: Keccak (SHA-3) PoW</li>
+  <li>Signatures: Schnorr</li>
+  <li>Generation: 100 million MAX</li>
+  <li>Coins Mined: 62 Million +</li>
+  <li>Block time: 1 minute</li>
+  <li>Block Rewards: 8 coins per block</li>
+  <li>Halving every ~4 years</li>
+  <li>Last Halving: July 16 2017</li>
+  <li>Transaction Fees: Close to Zero</li>
+  <li>Difficulty Retarget: Every block KGW</li>
+</ul>
+
+</div>
 
 {% assign HEAD_PREFIX = "h_" %}
 {% assign LIST_PREFIX = "l_" %}
@@ -19,7 +38,7 @@ layout: page
   {% assign posts_of_category = category | last %}
   {% assign first_post = posts_of_category | first %}
 
-  {% if category_name == "Use Maxcoin" %}
+  {% if category_name == "Features" %}
     {% if category_name == first_post.categories[0] %}
       {% assign sub_categories = "" | split: "" %}
 

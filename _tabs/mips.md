@@ -2,5 +2,5 @@
 layout: mips
 title: MIPs
 icon: fas fa-stream
-order: 5
+order: 6
 ---

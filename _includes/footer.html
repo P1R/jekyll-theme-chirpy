@@ -4,14 +4,15 @@
 
 <footer class="d-flex w-100 justify-content-center">
   <div class="d-flex justify-content-between align-items-center">
-    <div class="footer-left">
+    <div class="footer-left w-50">
       <p class="mb-0">
         © {{ 'now' | date: "%Y" }}
-        <a href="https://maxcoinproject.org">{{ site.social.name }}</a>.
+        <a href="https://maxcoinproject.org">maxcoinproject.org</a>.
         <a href="https://maxcoinproject.eth">.eth</a>.
         <a href="https://maxcoinproject.eth.link">.eth.link</a>.
         <a href="https://maxcoinproject.net">.net</a>.
         <a href="https://maxcoinproject.com">.com</a>.
+        <a href="https://maxcoinproject.org">home.maxcoinproject</a>.
         <br />
         <span data-toggle="tooltip" data-placement="top"
           title="Maxcoin's features are enhanced thru the power of online privacy, security, censorship resistance and decentralization." >
@@ -19,7 +20,6 @@
         <br />
         <span data-toggle="tooltip" data-placement="top"
           title="Trading is a high risk activity, consult your financial advisor regarding cryptocurrency. We are NOT financial advisors, and Maxcoin Project does not give trading advice. Maxcoin Project does NOT and can NOT take ANY responsibility for third party providers, listed exchanges, wallets, sites etc. By using software, 3rd party providers, exchanges or other service sites, you are accepting your own responsibility for any losses or damages.Maxcoin respects your privacy and does not collect web analytics from users." >Trading / Financial Note</span>
-        <br /> 
         {% if site.data.locales[lang].copyright.brief %}
         <span data-toggle="tooltip" data-placement="top"
           title="{{ site.data.locales[lang].copyright.verbose }}">{{ site.data.locales[lang].copyright.brief }}</span>
@@ -46,10 +46,9 @@
           <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
         {% endcapture %}
         
-
         {{ site.data.locales[lang].meta
-          | default: ':JAMStack Powered by :PLATFORM and :THEME theme.'
-          | replace: ':PLATFORM', _platform | replace: ':THEME', _theme 
+          | default: 'JAMStack Powered by :PLATFORM and :THEME theme.'
+          | replace: ':PLATFORM', _platform | replace: ':THEME', _theme | replace: "and", "&"
         }}
 
       </p>

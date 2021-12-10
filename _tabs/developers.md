@@ -2,5 +2,5 @@
 layout: developers
 title: Developers
 icon: fas fa-stream
-order: 2
+order: 3
 ---
