@@ -8,7 +8,7 @@ render_with_liquid: false
 pin: true
 ---
 
-by: https://twitter.com/graphics4crypto and https://twitter.com/mxjmpbean
+by: [https://twitter.com/graphics4crypto](https://twitter.com/graphics4crypto) and [https://twitter.com/mxjmpbean](https://twitter.com/mxjmpbean)
 
 ## Getting Started:
 
@@ -16,12 +16,16 @@ by: https://twitter.com/graphics4crypto and https://twitter.com/mxjmpbean
 - Open ccminer folder then create a text document ( Right click-> New-> Text Document).
 - New Text Document -> Right click–> Rename-> MAXcoin-<poolname>.conf
 - then (RightClick ->  Edit) copy & paste, where <poolname> is the name of the pool you wish to connect
-- {
+
+```sh
+ {
 “algo” : “keccak”,
 “url” : “stratum+tcp://pool_address:port”,
 “user” : “username.workername”,
 “pass” : “worker_password”
 }
+```
+
 - Replace username.workername and worker password from your pool account.
 - Replace from “url” : stratum+tcp://pool:port with the pool address you with to use.
 - Save and close the file.
@@ -39,12 +43,14 @@ by: https://twitter.com/graphics4crypto and https://twitter.com/mxjmpbean
 - Replace the username and worker from your created account.
 - Example of thecoin.pw config file:
 
-- {
+```sh
+{
 “algo” : “keccak”,
 “url” : “stratum+tcp://thecoin.pw:4100”,
 “user” : “username.workername”,
 “pass” : “worker_password”
 }
+```
 
 ## With Crypto Hub:
 
@@ -54,12 +60,14 @@ by: https://twitter.com/graphics4crypto and https://twitter.com/mxjmpbean
 - Replace the username with the email that you used to register. If you wish to specify a worker name, place the worker name after the email, starting with :
 - Example of Crypto Hub config file:
 
-- {
+```sh
+{
 “algo” : “keccak”,
 “url” : “stratum+tcp://cryptohub.online:5000”,
 “user” : “user@email.com:worker_name”,
 “pass” : “x”
 }
+```sh
 
 ## With zpool:
 
@@ -67,12 +75,15 @@ by: https://twitter.com/graphics4crypto and https://twitter.com/mxjmpbean
 - Address: keccak.mine.zpool.ca
 - Port: 5133
 - Example of zpool config file:
-- {
+
+```sh
+{
 “algo” : “keccak”,
 “url” : “stratum+tcp://keccak.mine.zpool.ca:5133”,
 “user” : “18QDfuLJnEyHbCvioD39CkuhKZzMUDrRFS”,
 “pass” : “x”
 }
+```
 
 ## With MiningPoolHub:
 
@@ -81,16 +92,15 @@ by: https://twitter.com/graphics4crypto and https://twitter.com/mxjmpbean
 - Port: 20461
 - Replace the username and worker from your created account.
 - Example of MiningPoolHub config file:
-- {
+
+```sh
+{
 “algo” : “keccak”,
 “url” : “stratum+tcp://hub.miningpoolhub.com:20461”,
 “user” : “username.workername”,
 “pass” : “worker_password”
 }
+```
 
 - Happy mining!
 
-## Sources
----
-
-[GPU (Nvidia) Mining Guide](https://github.com/decentralized/GPU-nVIDIA-Maxcoin-Mining-Guide) 

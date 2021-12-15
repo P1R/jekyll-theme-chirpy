@@ -20,3 +20,9 @@ The use of the Secp256k1 field is specifically recommended by NIST, an organisat
   * Increased Scalability
   * Anti-Spam Attacks
   * Interactive Signature Aggregation
+
+Some Schnorr Resources:
+1. [https://bitcoinmagazine.com/technical/scriptless-scripts-how-bitcoin-can-support-smart-contracts-without-smart-contracts](https://bitcoinmagazine.com/technical/scriptless-scripts-how-bitcoin-can-support-smart-contracts-without-smart-contracts)
+2. [https://bitcoinmagazine.com/culture/the-power-of-schnorr-the-signature-algorithm-to-increase-bitcoin-s-scale-and-privacy-1460642496](https://bitcoinmagazine.com/culture/the-power-of-schnorr-the-signature-algorithm-to-increase-bitcoin-s-scale-and-privacy-1460642496)
+3. [https://medium.com/scalar-capital/scriptless-scripts-25e18fd52ede](https://medium.com/scalar-capital/scriptless-scripts-25e18fd52ede) 
+4. [https://medium.com/scalar-capital/schnorr-signatures-754038368b87](https://medium.com/scalar-capital/schnorr-signatures-754038368b87)

@@ -15,3 +15,4 @@ pin: true
 ### Third Party Explorers:
   * [Open Chains](https://openchains.info/coin/maxcoin/blocks)
 
+*If you would like to submit a Maxcoin Exchange to be listed here, please [contact us on telegram](https://t.me/maxcoinproject) and let us know.*

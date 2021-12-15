@@ -160,9 +160,10 @@ https://github.com/Max-Coin/maxcoin/blob/master/src/base58.h#L275
 
 ## Sources
 
-https://github.com/spesmilo/electrumx
+1. [https://github.com/spesmilo/electrumx](https://github.com/spesmilo/electrumx)
 
-https://gist.githubusercontent.com/cipig/af7ff886ca92746c3cac55e90cfcdddd/raw/9e8e1860cd31763e822607648d2d447810dfb4dc/electrumx_addcoin.md
+2. [https://gist.githubusercontent.com/cipig/af7ff886ca92746c3cac55e90cfcdddd/raw/9e8e1860cd31763e822607648d2d447810dfb4dc/electrumx_addcoin.md](https://gist.githubusercontent.com/cipig/af7ff886ca92746c3cac55e90cfcdddd/raw/9e8e1860cd31763e822607648d2d447810dfb4dc/electrumx_addcoin.md)
 
-https://github.com/SmartCash/electrum-smart-server/commit/cc4b3e0b4076f2482683fd244ba048415eaa5b90
+3. [https://github.com/SmartCash/electrum-smart-server/commit/cc4b3e0b4076f2482683fd244ba048415eaa5b90](https://github.com/SmartCash/electrum-smart-server/commit/cc4b3e0b4076f2482683fd244ba048415eaa5b90)
+
 

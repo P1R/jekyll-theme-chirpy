@@ -23,3 +23,5 @@ As a community, we believe that when a cryptocurrency is allowed to grow organic
 
 > **Note:** Yobit Deposits and Withdrawals are currently Disabled
 
+*If you would like to submit a Maxcoin Exchange to be listed here, please [contact us on telegram](https://t.me/maxcoinproject) and let us know.*
+
