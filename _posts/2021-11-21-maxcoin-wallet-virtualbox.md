@@ -1,5 +1,5 @@
 ---
-title: HOWTO Maxcoin Wallet with virtualbox 
+title: Setup Maxcoin Virtualbox Development Environment 
 author: p1r0
 date: 2021-11-21 16:41:00 +0800
 categories: [Developers, Wallets]
