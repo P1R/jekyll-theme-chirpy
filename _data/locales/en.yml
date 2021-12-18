@@ -72,7 +72,7 @@ post:
     unit: min
     prompt: read
   relate_posts: Further Reading
-  share: Share
+  share: Help Maxcoin by Sharing this Post
   button:
     next: Newer
     previous: Older
