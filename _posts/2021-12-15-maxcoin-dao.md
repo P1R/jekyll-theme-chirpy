@@ -55,15 +55,15 @@ Maxcoin DAO has the goal to Develop and provide governance in the Maxcoin Projec
 ```
 sequenceDiagram
     MaxcoinBlockchain->>+BurnAddress: User Sends Maxcoin
-    MaxcoinBlockchain->>+DAOMax: Notifies to DAO and sends DMAX address
-    DAOMax->>+DAOMax: Creates a ballot for verifiers
+    MaxcoinBlockchain->>+MaxcoinDAO: Notifies to DAO and sends DMAX address
+    MaxcoinDAO->>+MaxcoinDAO: Creates a ballot for verifiers
     loop Verification Process
-        DAOMax->>+BurnAddress: DAOMax Verifies transaction
+        MaxcoinDAO->>+BurnAddress: MaxcoinDAO Verifies transaction
         alt it was Approved
-            DAOMax->>+DAOMax: Mints DMAX To The Onwers wallet - fee
-            DAOMax->>+DAOMax: fee gets distributed to the DAO participants
+            MaxcoinDAO->>+MaxcoinDAO: Mints DMAX To The Onwers wallet - fee
+            MaxcoinDAO->>+MaxcoinDAO: fee gets distributed to the DAO participants
         else it was not
-            DAOMax-->>-MaxcoinBlockchain: Please verify
+            MaxcoinDAO-->>-MaxcoinBlockchain: Please verify
         end
     end
 
