@@ -1,6 +1,6 @@
 ---
 layout: categories
-title: Categories
+title: Documentation
 icon: fas fa-stream
-order: 1
+order: 7
 ---

@@ -189,6 +189,14 @@ Unless you specified the output path, the generated site files will be placed in
 It depends on how you use the theme:
 
 - If you are using the theme gem (there will be `gem "jekyll-theme-chirpy"` in the `Gemfile`), editing the `Gemfile` and update the version number of the theme gem, for example:
+<<<<<<< HEAD
+=======
+
+    ```diff
+    - gem "jekyll-theme-chirpy", "~> 3.2", ">= 3.2.1"
+    + gem "jekyll-theme-chirpy", "~> 3.3", ">= 3.3.0"
+    ```
+>>>>>>> maxcoinUpdates
 
   ```diff
   - gem "jekyll-theme-chirpy", "~> 3.2", ">= 3.2.1"

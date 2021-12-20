@@ -5,93 +5,47 @@ layout: page
 
 {% include lang.html %}
 
-{% assign pinned = site.posts | where: "pin", "true" %}
-{% assign default = site.posts | where_exp: "item", "item.pin != true" %}
+<div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
+    
+      <h1 class="dynamic-title">
+        What is Maxcoin?
+      </h1>
+      <div class="post-content">
+<p><em> Max Speed, Security, Integrity &amp; Governance</em></p>
+<p><strong>We are a Self Governed, tech-oriented, no hype community driven cryptocurrency. We are here for all, whether you’ve been with us since the start, or only just discovered us today. It is your coin and it’s in your hands, a true Eco-system of human interaction thru collaboration. <a href="/posts/maxcoin-philosophy/">Click here</a> to view our Philosophy & Principles.</strong></p>
 
-{% assign posts = "" | split: "" %}
+<p>Join us and start <a href="/use-maxcoin/">using</a>, <a href="/miners/">mine</a> or <a href="/developers/">develop</a> maxcoin today. Take part in the <a href="/governance/">Governance</a> and/or make proposals in <a href="/mips/">MIPs</a>, together we can make a difference. </p>
 
-<!-- Get pinned posts -->
+<h2 id="maxcoin-fundamentals">Maxcoin Fundamentals:</h2>
+<hr>
+<ul>
+  <li>Open Source / FOSS</li>
+  <li>Secure &amp; Robust</li>
+  <li>Self Governed &amp; Community Driven</li>
+  <li>Old School, Fair Launch</li>
+  <li>Open &amp; Transparent</li>
+  <li>Zero Pre-mine with No Central Funding</li>
+  <li>Unique Coin Attributes</li>
+  <li>Next Generation Encryption SHA3</li>
+  <li>Schnorr Signatures</li>
+</ul>
 
-{% assign offset = paginator.page | minus: 1 | times: paginator.per_page %}
-{% assign pinned_num = pinned.size | minus: offset %}
+<h2 id="coin-features">Coin Features:</h2>
+<hr>
+<ul>
+  <li>Algorithm: Keccak (SHA-3) PoW</li>
+  <li>Signatures: Schnorr</li>
+  <li>Generation: 100 million MAX</li>
+  <li>Coins Mined: 62 Million +</li>
+  <li>Block time: 1 minute</li>
+  <li>Block Rewards: 8 coins per block</li>
+  <li>Halving every ~4 years</li>
+  <li>Last Halving: July 16 2017</li>
+  <li>Transaction Fees: Close to Zero</li>
+  <li>Difficulty Retarget: Every block KGW</li>
+  <li>List of <a href="/features/">Maxcoin Features</a></li>
+</ul>
 
-{% if pinned_num > 0 %}
-  {% for i in (offset..pinned.size) limit: pinned_num %}
-    {% assign posts = posts | push: pinned[i] %}
-  {% endfor %}
-{% else %}
-  {% assign pinned_num = 0 %}
-{% endif %}
-
-
-<!-- Get default posts -->
-
-{% assign default_beg = offset | minus: pinned.size %}
-
-{% if default_beg < 0 %}
-  {% assign default_beg = 0 %}
-{% endif %}
-
-{% assign default_num = paginator.posts | size | minus: pinned_num  %}
-{% assign default_end = default_beg | plus: default_num | minus: 1 %}
-
-{% if default_num > 0 %}
-  {% for i in (default_beg..default_end) %}
-    {% assign posts = posts | push: default[i] %}
-  {% endfor %}
-{% endif %}
-
-<div id="post-list">
-
-{% for post in posts %}
-
-  <div class="post-preview">
-    <h1>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h1>
-
-    <div class="post-content">
-      <p>
-        {% include no-linenos.html content=post.content %}
-        {{ content | markdownify | strip_html | truncate: 200 }}
-      </p>
-    </div>
-
-    <div class="post-meta text-muted d-flex justify-content-between">
-
-      <div>
-        <!-- posted date -->
-        <i class="far fa-calendar fa-fw"></i>
-        {% include timeago.html date=post.date tooltip=true %}
-
-        <!-- time to read -->
-        <i class="far fa-clock fa-fw"></i>
-        {% include read-time.html content=post.content %}
-
-        <!-- page views -->
-        {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
-        <i class="far fa-eye fa-fw"></i>
-        <span id="pv_{{-post.title-}}" class="pageviews">
-          <i class="fas fa-spinner fa-spin fa-fw"></i>
-        </span>
-        {% endif %}
       </div>
+</div>
 
-      {% if post.pin %}
-      <div class="pin">
-        <i class="fas fa-thumbtack fa-fw"></i>
-        <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-      </div>
-      {% endif %}
-
-    </div> <!-- .post-meta -->
-
-  </div> <!-- .post-review -->
-
-{% endfor %}
-
-</div> <!-- #post-list -->
-
-{% if paginator.total_pages > 0 %}
-  {% include post-paginator.html %}
-{% endif %}
