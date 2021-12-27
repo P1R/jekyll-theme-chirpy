@@ -12,7 +12,7 @@ mermaid: true
 
 ## Abstract
 
-Maxcoin DAO has the goal to Develop and provide governance in the Maxcoin Project desitions, also it will help to make Maxcoin Project deflationary and incentive people to participate in the project decisions. In the following document we describe the generalities to make it work, technologies, protocols and processes.
+The Maxcoin DAO provides the governance and incentive participation Maxcoin Project needs to develop and make decisions in a decentralized manner, all whilst making Maxcoin a deflationary currency. In the following document we describe the technologies, protocols and processes that make it work.
 
  
 ## DMAX Features
@@ -26,7 +26,7 @@ Maxcoin DAO has the goal to Develop and provide governance in the Maxcoin Projec
 
 ## Protocols and Tech Requirements
 
-1. Maxcoin Project .
+1. Maxcoin Project.
 2. Ethereum Platform.
 3. Aragon Client (DAO and Quadratic Voting).
 4. Aragon Agent (DMAX management).
@@ -46,7 +46,7 @@ Maxcoin DAO has the goal to Develop and provide governance in the Maxcoin Projec
 1. The Maxcoin user sends Maxcoin to the burning address
 2. The Maxcoin user creates a request with the Transaction ID (TxID) at the Maxcoin DAO (based on Aragon client and Aragon Agent) And the Ethereum wallet address that will receive the DMAX token.
 3. The Maxcoin DAO Members and already DMAX Holders will have the possibility to participate in the verification process. By doing Quadratic Voting (Aragon client module) we will generate a DMAX paired 1:1 with the burned Maxcoins, the DAO might take a small fee for voting and doing the process (this fee is to incentivize voters and get faster verifications)
-4. The Maxcoin User gets DMAX in his  Ethereum Wallet.
+4. The Maxcoin user gets DMAX in their Ethereum Wallet.
 
 ## Sequence Diagram
 
