@@ -1767,3 +1767,8 @@ $sidebar-display: "sidebar-display";
     margin-left: 41px;
   }
 }
+
+body, #main, #main-wrapper {
+   overflow: hidden;
+   overscroll-behavior: none;
+}
