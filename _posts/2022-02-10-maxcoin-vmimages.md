@@ -12,11 +12,11 @@ Currently we have three images supporting virtualbox, vmware and kvm. They come 
 ## 1. Download the image for your preferred virtualization software.
 
 
-* [KVM image](https://mega.nz/file/IAwFmA7a#mX0FeSGAdCJ-0LQ-iGoKQWESo6qKo3UqCqNGwOHGwrk)
-* [VirtualBox image](https://mega.nz/file/tFgRBYKB#Y3mUWb3g06f7GZwWOIpcVufh3KGGXbPCQ0pxAd09Ev0)
-* [VMWARE image](https://mega.nz/file/4BxhmS6B#PrIp3-QL2_QrQStk9dHxIjEZop5QuUExuAOyzd4LN98)
+* [KVM image](https://mega.nz/file/oNwkjC6L#6TdQJ_B-lPoxRO_MCzEFOHkUP5Z8YuFnQi9jJTvU7Pw)
+* [VirtualBox image](https://mega.nz/file/lIoQAQJb#d_VENtWpuVLg2aegGGMQAkc-ifYKH7vOB1uEGhdsWpk)
+* [VMWARE image](https://mega.nz/file/ZYgBkTBb#geLqMwUc0qr_SZpuViACIxR6QLL5MuL1zFmsGNwaZGg)
 
-> **NOTE:** Once downloaded, you must verify the images integrity which should match the sha256 checksum hash compare it with the [checksums-images.txt](https://mega.nz/file/VBpxyC7D#KWHk9jQGA-EBI5Y0QPcwx0NCjK1r1g-P1ejEq8NWCcY).
+> **NOTE:** Once downloaded, you must verify the images integrity which should match the sha256 checksum hash compare it with the [checksums-images.txt](https://mega.nz/file/5ARjiSbb#aiuiioyxS1UpvoomzGm57uc1i1blpPyS8sPe-bEIRH4).
 
 ## Login Inf
 
@@ -73,7 +73,29 @@ To setup a shared folder betwwn guest and host use [*this guide*](https://helpde
 
 **ToDo**
 
-***
+## Lastest BlockChain Backup
+In case your blockchain sync is going too slow, we have a temporal solution that is downloading the latest blockchain
+copy, Please refer to [MIP2](/posts/MIP2-informational/) if you want to help us distribute it in a better way
+
+1. Download the latest [MaxCoin BlockChain](https://mega.nz/file/gZ5DxTiS#CplvVymfIP8NJUfWW0zFD23UwoePWXeuFhKfjjwHlV4)
+2. Verify the hash corresponds to `6d73ef55cc7f1964bea3da875cb0aff1a992ffd9325dd81c2645fd290c20db38`
+Execute the following command to the downloaded file:
+
+```sh
+$sha256sum maxcoinBlockChainBack-1651801511.tar.xz 
+6d73ef55cc7f1964bea3da875cb0aff1a992ffd9325dd81c2645fd290c20db38  maxcoinBlockChainBack-1651801511.tar.xz
+``` 
+> Note: if the hash is diferent from this one, do not follow up and contact us at the [telegram channel](https://t.me/maxcoinproject)
+
+3. move the file to your home directory and extract the file
+```sh
+$cd ~ && tar xvf maxcoinBlockChainBack-1651801511.tar.xz  
+```
+4. execute the maxcoin-qt wallet
+```sh
+$cd ~/maxcoin && ./maxcoin-qt  
+```
+
 ## License
 
 [**UNLICENSE**](./LICENSE). ?
