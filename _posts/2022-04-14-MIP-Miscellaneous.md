@@ -5,7 +5,7 @@ date: 2022-04-14 17:30:00 +0800
 categories: [MIPs, Core]
 tags: [MIPs, Core]
 render_with_liquid: false
-pin: true
+pin: false
 ---
 
 * https://hedera.com/ integration
