@@ -20,7 +20,7 @@ requires (optional) | MIP number(s) |
 
 ## Abstract 
 
-by creating a boostrap.dat[4] image, and publish into an IPNS (pinned in multiple servers) and the usage of circuit relay we will be hable tu do nightly updates synced to one node that can be monitored, a second node can maybe work on weekly updates. There is already a tool inside the bitcoin core code for this prouposes[5], A considertion might be to clone it into the maxcoin repo if it works properly.
+by creating a boostrap.dat image, and publish into an IPNS (pinned in multiple servers) and the usage of circuit relay we will be hable tu do nightly updates synced to one node that can be monitored, a second node can maybe work on weekly updates. There is already a tool inside the bitcoin core code for this prouposes, A considertion might be to clone it into the maxcoin repo if it works properly.
 
 
 ## MIP Workflow 
