@@ -139,7 +139,7 @@ SPECIAL INSTRUCTIONS FOR UBUNTU USERS
 
 All Ubuntu releases starting with 16.10 (first released in October 2016) come installed with [systemd-resolved](https://www.freedesktop.org/software/systemd/man/systemd-resolved.service.html), which effectively prevents the seeder's built-in DNS server from working correctly. This is due to both applications requiring use of port 53, and systemd-resolved takes priority by default. There are a few ways to resolve this issue:
 
-1. Force the seeder to bind to a specific IP address by adding the following argument to the terminal cmd: `-a <ip address>`. This is the recommended solution as it doesn't require disabling of any operating system services.
+1.- Force the seeder to bind to a specific IP address by adding the following argument to the terminal cmd: `-a <ip address>`. This is the recommended solution as it doesn't require disabling of any operating system services.
 
 Example:
 
@@ -147,7 +147,7 @@ Example:
 sudo ./dnsseed -h dnsseed.example.com -n vps.example.com -a 123.231.123.231
 ```
 
-2. Disable binding of systemd-resolved to port 53 by editing the `/etc/systemd/resolved.conf` file and adding this line to the bottom of the file:
+2.- Disable binding of systemd-resolved to port 53 by editing the `/etc/systemd/resolved.conf` file and adding this line to the bottom of the file:
 
 ```
 DNSStubListener=no
@@ -157,13 +157,56 @@ Save and reboot, and now systemd-resolved will no longer interfere with the seed
 
 >**NOTE:** This method is only supported by systemd 232 and newer. You can check your version of systemd with the cmd: `systemctl --version`
 
-3. Completely disable the systemd-resolved service with the following cmds (not recommended as it may cause undesired side-effects if you use the same server for anything other than running the seeder app):
+3.- Completely disable the systemd-resolved service with the following cmds (not recommended as it may cause undesired side-effects if you use the same server for anything other than running the seeder app):
 
 ```
 sudo systemctl disable systemd-resolved
 sudo systemctl stop systemd-resolved
 ```
-> **NOTE:** Sometimes after the procedure 2 or 3 there is an issue with the dns resolving addresses so it is recommended to [add your dns ip addresses](https://linuxhint.com/set-dns-name-servers-ubuntu-linux/).
+
+### FIX KNOWN ISSUES AFTER PROCEDURE 2 OR 3
+
+Sometimes after the procedure 2 or 3 there is an issue with the dns resolving addresses so it is recommended to follow this solution:
+
+1.- Delete the resolv.conf file:
+
+```sh
+sudo rm -f /etc/resolv.conf
+```
+
+2.- Edit, add dns servers configs and write the file.
+
+```sh
+sudo vim /etc/resolv.conf
+```
+> Example config at the /etc/resolv.conf file:
+
+```sh
+nameserver 1.1.1.1
+nameserver 1.0.0.1
+~
+```
+
+3.- Set linux file system file attribute to cannot be modified
+
+```sh
+sudo chattr +i /etc/resolv.conf 
+```
+
+4.- Restart the network config depeding on your configuration
+
+> Option 1:
+
+```sh
+sudo /etc/init.d/networking restart 
+```
+
+> Option 2:
+
+```sh
+sudo netplan apply
+```
+
 
 ## ToDo
 * Support Linux systems with systemd-resolvd service
