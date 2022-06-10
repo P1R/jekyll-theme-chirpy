@@ -1,0 +1,248 @@
+---
+layout: page
+# The Wallets page layout
+---
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7EPLL3LSX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7EPLL3LSX9');
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//webpublishers.au/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+{% include lang.html %}
+
+<div id="page" class="post pb-5 pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4 mb-md-4">
+  
+
+        
+
+        <h2 id="wallets">Wallets</h2>
+<hr>
+<p>Maxcoin Core Contributors are welcome to work on an iOS and Android wallet, but we are also interested in working closely with 3rd Party Wallets where your wallets will be introduced to our growing Maxcoin community.</p>
+
+<p><strong>Core Maxcoin Wallets:</strong></p>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Operating System</td>
+      <td>Type</td>
+      <td>Download</td>
+    </tr>
+    <tr>
+      <td>maxcoinQT</td>
+      <td>Windows</td>
+      <td>Core Wallet</td>
+      <td><button type="button" class="btn btn-outline-success"><a href="https://github.com/Max-Coin/maxcoin/releases/download/v0.9.4.2/maxcoin-installer.exe">Download</a></button></td>
+    </tr>
+    <tr>
+      <td>maxcoinQT</td>
+      <td>MacOS</td>
+      <td>Core Wallet</td>
+      <td><button type="button" class="btn btn-outline-success"><a href="https://github.com/Max-Coin/maxcoin/releases/download/v0.9.4.2/MaxCoin-QT.dmg">Download</a></button></td>
+    </tr>
+    <tr>
+      <td>maxcoinQT</td>
+      <td>Linux</td>
+      <td>Core Wallet</td>
+      <td><button type="button" class="btn btn-outline-success"><a href="https://github.com/Max-Coin/maxcoin/releases/download/v0.9.4.2/linux_wallet_x64.deb">Download</a></button></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<blockquote>
+  <p>Note: You can also build the wallet yourself by downloading the Compressed Source Code from the <a href="https://github.com/Max-Coin/maxcoin/archive/refs/tags/v0.9.4.2.zip">zip</a>, <a href="https://github.com/Max-Coin/maxcoin/archive/refs/tags/v0.9.4.2.tar.gz">tar.gz</a> file or by cloning the <a href="https://github.com/Max-Coin/maxcoin/releases/download/v0.9.4.2/">Latest Release</a> git repository.</p>
+</blockquote>
+
+<p><strong>Other Maxcoin Wallets:</strong></p>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Operating System</td>
+      <td>Type</td>
+      <td>Note</td>
+    </tr>
+    <tr>
+      <td>Paper Wallet</td>
+      <td><a href="https://github.com/Max-Coin/paper-wallet-generator">WEB</a></td>
+      <td>Paper Wallet</td>
+      <td>Retiring</td>
+    </tr>
+    <tr>
+      <td>Maxcoin IPFS Paper Wallet</td>
+      <td>WEB</td>
+      <td>IPFS</td>
+      <td>Soon</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="options-to-sync-faster-with-the-blockchain">Options to sync faster with the blockchain</h2>
+<p>While we work on growing and decentralizing maxcoin further (dnsseeds, tor, ipfs, etc..) and speed up the blockchain syncing, we understand the current builds do not have the speed required to get the blockchain, and thus we have faster sync solutions, yet we still encourage people to use the old way and let the wallet sync by its own (3 weeks) to enhance security.</p>
+
+<p>There are two ways to speed things up, that are:</p>
+<ol>
+  <li>Bootstrap image. (approx. 10 days to sync)</li>
+  <li>Latest Blockchain automatic backups. (approx. 10 hours to sync)</li>
+</ol>
+
+<h3 id="1-bootstrap-image-approx-10-days-to-sync">1. Bootstrap image. (approx. 10 days to sync)</h3>
+
+<ol>
+  <li>Download the latest MaxCoin bootstrap.dat.zip:
+    <ul>
+      <li><a href="http://bootstrap.getmaxcoin.com">miror1</a></li>
+      <li><a href="http://bootstrap.maxcoinproject.org">miror2</a></li>
+    </ul>
+  </li>
+  <li>Verify the hash corresponds to <code class="language-plaintext highlighter-rouge">1cdfe13c910a433136f474704531ab5a0461715478c2fefb42db77da360b0af5</code>
+Execute the following command to the downloaded file:</li>
+</ol>
+
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Shell
+  
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed="Copied!" data-original-title="" title=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span><span class="nb">sha256sum </span>bootstrap.dat.zip 
+1cdfe13c910a433136f474704531ab5a0461715478c2fefb42db77da360b0af5  bootstrap.dat.zip
+</pre></td></tr></tbody></table></code></div></div>
+<blockquote>
+  <p>Note: if the hash is diferent from this one, do not follow up and contact us at the <a href="https://t.me/maxcoinproject">telegram channel</a></p>
+</blockquote>
+
+<ol>
+  <li>move the file to your home directory, extract the file and set it into the config directory
+    <div class="language-sh highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Shell
+  
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed="Copied!" data-original-title="" title=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$cd</span> ~ <span class="o">&amp;&amp;</span> unzip bootstrap.dat.zip <span class="o">&amp;&amp;</span> <span class="nb">mv </span>bootstrap.dat ~/.maxcoin/ 
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li>execute the maxcoin-qt wallet and Syncing should start working
+    <div class="language-sh highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Shell
+  
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed="Copied!" data-original-title="" title=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$cd</span> ~/maxcoin <span class="o">&amp;&amp;</span> ./maxcoin-qt  
+</pre></td></tr></tbody></table></code></div>    </div>
+    <blockquote>
+      <p>Note: For Windows based systems follow up this tutorial <a href="https://coinguides.org/bitcoin-bootstrap-dat-source-usage/">Bitcoin Bootstrap.dat - Where to find and how to use Bootstrap.dat file</a></p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="2-latest-blockchain-automatic-backups-approx-10-hours-to-sync">2. Latest Blockchain automatic backups. (approx. 10 hours to sync)</h3>
+
+<ol>
+  <li>Download the latest <a href="http://blockchain.getmaxcoin.com">MaxCoin BlockChain</a></li>
+  <li>Verify the hash corresponds to <code class="language-plaintext highlighter-rouge">6d73ef55cc7f1964bea3da875cb0aff1a992ffd9325dd81c2645fd290c20db38</code>
+Execute the following command to the downloaded file:</li>
+</ol>
+
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Shell
+  
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed="Copied!" data-original-title="" title=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="nv">$sha256sum</span> maxcoinBlockChainBack-1651801511.tar.xz 
+6d73ef55cc7f1964bea3da875cb0aff1a992ffd9325dd81c2645fd290c20db38  maxcoinBlockChainBack-1651801511.tar.xz
+</pre></td></tr></tbody></table></code></div></div>
+<blockquote>
+  <p>Note: if the hash is diferent from this one, do not follow up and contact us at the <a href="https://t.me/maxcoinproject">telegram channel</a></p>
+</blockquote>
+
+<ol>
+  <li>move the file to your home directory and extract the file
+    <div class="language-sh highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Shell
+  
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed="Copied!" data-original-title="" title=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$cd</span> ~ <span class="o">&amp;&amp;</span> <span class="nb">tar </span>xvf maxcoinBlockChainBack-1651801511.tar.xz  
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li>execute the maxcoin-qt wallet
+    <div class="language-sh highlighter-rouge"><div class="code-header">
+        <span text-data="
+
+
+
+
+    Shell
+  
+"><i class="fa-fw fas fa-code small"></i></span>
+      <button aria-label="copy" title-succeed="Copied!" data-original-title="" title=""><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="nv">$cd</span> ~/maxcoin <span class="o">&amp;&amp;</span> ./maxcoin-qt  
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Special Note Regarding Wallet Sync Time:</p>
+
+  <p>It can take upto 7 days or longer for the Maxcoin QT wallet to sync due to 4 years + of blockchain transactions.
+ If you would like to install the full node with rapid syncing, we recommend that you use one of the following methods.
+ We encourage the community to sync, seed and share the following p2p solutions.</p>
+</blockquote>
+
+<p><em>If you would like to list a 3rd Party Wallet that lists Maxcoin as a supported coin, please <a href="https://t.me/maxcoinproject">contact us on telegram</a> and let us know.</em></p>
+
+<p><em>If you are a Multi Currency Wallet and would like to support Maxcoin, please <a href="https://t.me/maxcoinproject">contact us on telegram</a> and let us know how so we can help with the process.</em></p>
+
+
+
+</div>
+

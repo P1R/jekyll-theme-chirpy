@@ -12,13 +12,13 @@ Currently we have three images supporting virtualbox, vmware and kvm. They come 
 ## 1. Download the image for your preferred virtualization software.
 
 
-* [KVM image](https://mega.nz/file/oNwkjC6L#6TdQJ_B-lPoxRO_MCzEFOHkUP5Z8YuFnQi9jJTvU7Pw)
-* [VirtualBox image](https://mega.nz/file/lIoQAQJb#d_VENtWpuVLg2aegGGMQAkc-ifYKH7vOB1uEGhdsWpk)
-* [VMWARE image](https://mega.nz/file/ZYgBkTBb#geLqMwUc0qr_SZpuViACIxR6QLL5MuL1zFmsGNwaZGg)
+* [KVM image](https://link.ap1.storjshare.io/jxwowj237xhb42zwd2oonztln2ia/p1r0backups%2Fmaxcoin.qcow2.tar.xz?download=1)
+* [VirtualBox image](https://link.ap1.storjshare.io/jxaflvlz5jtl3esw4lck235zrs4a/p1r0backups%2Fmaxcoin.vdi.tar.xz?download=1)
+* [VMWARE image](https://link.ap1.storjshare.io/jvz53btg4sujejv46bqpd6vg22sq/p1r0backups%2Fmaxcoin.vmdk.tar.xz?download=1)
 
-> **NOTE:** Once downloaded, you must verify the images integrity which should match the sha256 checksum hash compare it with the [checksums-images.txt](https://mega.nz/file/5ARjiSbb#aiuiioyxS1UpvoomzGm57uc1i1blpPyS8sPe-bEIRH4).
+> **NOTE:** Once downloaded, you must verify the images integrity which should match the sha256 checksum hash compare it with the [checksums-images.txt](https://link.ap1.storjshare.io/jxmk4st64znhgdptsng6scxn3wfa/p1r0backups%2Fchecksums-images.txt?download=1).
 
-## Login Inf
+## Login Info
 
 
 
@@ -65,15 +65,10 @@ To setup a shared folder betwwn guest and host use [*this guide*](https://helpde
    * [Arch Guide](https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar/)
 6. Import the qcow2 image from qemu, following [this guide](https://ostechnix.com/create-a-kvm-virtual-machine-using-qcow2-image-in-linux/) from  the `2. Import Qcow2 images using Virt-manager`section.
 
-
 ---
 
+## Latest Blockchain automatic backups. (approx. 10 hours to sync)
 
-## Install and Setup the virtual machine for VMWare
-
-**ToDo**
-
-## Lastest BlockChain Backup
 In case your blockchain sync is going too slow, we have a temporal solution that is downloading the latest blockchain
 copy, Please refer to [MIP2](/posts/MIP2-informational/) if you want to help us distribute it in a better way
 
